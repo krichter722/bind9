@@ -35,12 +35,16 @@ AC_DIVERT_POP()dnl
 AC_INIT(BIND, [9.11], [bind9-bugs@isc.org], [], [https://www.isc.org/downloads/BIND/])
 AC_PREREQ(2.59)
 
+AM_INIT_AUTOMAKE([subdir-objects])
+
 AC_CONFIG_HEADER(config.h)
-AC_CONFIG_MACRO_DIR([libtool.m4])
+AC_CONFIG_MACRO_DIR([m4])
 
 AC_CANONICAL_HOST
 
 AC_PROG_MAKE_SET
+
+LT_INIT
 
 #
 # GNU libtool support

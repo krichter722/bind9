@@ -15,6 +15,8 @@
 
 # $Id: Makefile.in,v 1.62 2011/09/06 04:06:37 marka Exp $
 
+ACLOCAL_AMFLAGS = -I m4
+
 srcdir =	@srcdir@
 VPATH =		@srcdir@
 top_srcdir =	@top_srcdir@
